@@ -4,7 +4,7 @@ const getRandomInt = (max) => Math.floor(Math.random() * max);
 
 const isEven = () => {
   console.log('Welcome to the Brain Games!');
-  const userName = () => readlineSync.question('May I have your name? ');
+  const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello there, ${userName}!`);
   for (let i = 0; i < 3; i += 1) {
     const randomNumber = getRandomInt(100);
