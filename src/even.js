@@ -6,6 +6,7 @@ const isEven = () => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello there, ${userName}!`);
+  console.log('Answer "yes" if the number is even, otherwise answer "no".');
   for (let i = 0; i < 3; i += 1) {
     const randomNumber = getRandomInt(100);
     console.log('Question:', randomNumber);
