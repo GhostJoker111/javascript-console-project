@@ -23,6 +23,6 @@ const isEven = () => {
       return console.log(errorMessage);
     }
   }
-  console.log(`Congratulations, ${name}!`);
+  return console.log(`Congratulations, ${name}!`);
 };
 export default isEven;
