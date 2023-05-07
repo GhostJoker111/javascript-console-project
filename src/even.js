@@ -4,9 +4,8 @@ const getRandomInt = (max) => Math.floor(Math.random() * max);
 
 const isEven = () => {
   console.log('Welcome to the Brain Games!');
-  const name = readlineSync.question('May I have your name? ');
-  console.log(`Hello there, ${name}!`);
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
+  const userName = () => readlineSync.question('May I have your name? ');
+  console.log(`Hello there, ${userName}!`);
   for (let i = 0; i < 3; i += 1) {
     const randomNumber = getRandomInt(100);
     console.log('Question:', randomNumber);
@@ -19,10 +18,10 @@ const isEven = () => {
       console.log('Correct!');
     } else {
       const opposite = answer === 'yes' ? 'no' : 'yes';
-      const errorMessage = `'${answer}' is wrong answer ;(. Correct answer was '${opposite}'.\nLet's try again, ${name}!`;
+      const errorMessage = `'${answer}' is wrong answer ;(. Correct answer was '${opposite}'.\nLet's try again, ${userName}!`;
       return console.log(errorMessage);
     }
   }
-  return console.log(`Congratulations, ${name}!`);
+  return console.log(`Congratulations, ${userName}!`);
 };
 export default isEven;
