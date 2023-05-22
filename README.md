@@ -2,4 +2,4 @@
 
 [![Actions Status](https://github.com/GhostJoker111/fullstack-javascript-project-44/workflows/hexlet-check/badge.svg)](https://github.com/GhostJoker111/fullstack-javascript-project-44/actions)
 
-<script async id="asciicast-583108" src="https://asciinema.org/a/583108.js"></script>
+<a href="https://asciinema.org/a/583108" target="_blank"><img src="https://asciinema.org/a/583108.svg" /></a>
