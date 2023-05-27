@@ -19,11 +19,11 @@ const progressionGame = () => {
 
     const lastIndexOfProgression = progression.length - 1;
     const randomNumberFromArr = getRandomRange(0, lastIndexOfProgression);
-    const rightAnswer = progression[randomNumberFromArr];
+    const removedNumber = progression[randomNumberFromArr];
     progression[randomNumberFromArr] = '..';
 
     const question = progression.join(' ');
-    const result = rightAnswer.toString();
+    const result = removedNumber.toString();
 
     return [question, result];
   };
